@@ -1,3 +1,14 @@
-body {
-  font-family: 'Roboto', sans-serif;
+@import "common/ui/common";
+@import "modules/modules";
+
+.root {
+  display: flex;
+  justify-content: center;
+
+  .app-container {
+    width: 100%;
+    max-width: $max-page-width;
+
+    padding: 20px;
+  }
 }

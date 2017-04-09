@@ -2,6 +2,10 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "rules": {
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
     "comma-dangle": [
       "error",
       "never"
@@ -29,6 +33,16 @@
         "ignoreRegExpLiterals": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true
+      }
+    ],
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": [
+          "handleSubmit"
+        ],
+        "customValidators": [],
+        "skipUndeclared": false
       }
     ],
     "quotes": [
