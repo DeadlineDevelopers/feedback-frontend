@@ -13,10 +13,12 @@
   "license": "UNLICENSED",
   "dependencies": {
     "babel-polyfill": "6.23.0",
+    "material-ui": "0.17.2",
     "react": "15.5.3",
     "react-dom": "15.5.3",
     "react-redux": "5.0.4",
     "react-router-dom": "4.0.0",
+    "react-tap-event-plugin": "2.0.1",
     "redux": "3.6.0",
     "redux-form": "6.6.2",
     "redux-promise": "0.5.3"
