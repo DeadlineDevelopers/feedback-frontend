@@ -6,7 +6,7 @@
       "error",
       "unix"
     ],
-    "eslint quotes": ["error", "double"],
+    "quotes": ["error", "single"],
     "comma-dangle": ["error", "never"],
     "max-len": [
       "error",
