@@ -31,7 +31,8 @@ export default (env) => {
           enforce: 'pre',
           loader: 'eslint-loader',
           options: {
-            failOnError: !isDevelopment,
+            emitWarning: isDevelopment,
+            failOnError: !isDevelopment
           }
         },
         {
@@ -68,8 +69,12 @@ export default (env) => {
     resolve: {
       modules: [
         'node_modules',
-        path.resolve('./src'),
-        path.resolve('./assets')
+        path.resolve(__dirname, 'src'),
+        path.resolve(__dirname, 'assets')
+      ],
+      extensions: [
+        '.js',
+        '.jsx'
       ]
     },
     devServer: {
@@ -86,6 +91,7 @@ export default (env) => {
         configFile: path.resolve(__dirname, '.stylelintrc.json'),
         files: 'src/**/*.scss',
         syntax: 'scss',
+        emitErrors: !isDevelopment,
         failOnError: !isDevelopment
       }),
       new ExtractTextPlugin({
