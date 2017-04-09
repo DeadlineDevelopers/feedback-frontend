@@ -2,12 +2,23 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "rules": {
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": [
+      "error",
+      {
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
     "linebreak-style": [
       "error",
       "unix"
     ],
-    "quotes": ["error", "single"],
-    "comma-dangle": ["error", "never"],
     "max-len": [
       "error",
       120,
@@ -18,6 +29,13 @@
         "ignoreRegExpLiterals": true,
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
       }
     ]
   },
