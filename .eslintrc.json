@@ -2,6 +2,11 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "eslint quotes": ["error", "double"],
     "comma-dangle": ["error", "never"],
     "max-len": [
       "error",
