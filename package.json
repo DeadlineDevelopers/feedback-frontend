@@ -12,7 +12,9 @@
   "author": "Deadline Developers",
   "license": "UNLICENSED",
   "dependencies": {
-    "babel-polyfill": "6.23.0"
+    "babel-polyfill": "6.23.0",
+    "react": "15.5.3",
+    "react-dom": "15.5.3"
   },
   "devDependencies": {
     "autoprefixer": "6.7.7",
